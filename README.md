@@ -10,8 +10,8 @@ This project is a simple Ethereum blockchain explorer built using Python and Fla
 
 ## Prerequisites
 
-- Python 3.x
-- Flask
+- Python 3.9
+- Flask 1.1.1
 - Web3.py
 
 
