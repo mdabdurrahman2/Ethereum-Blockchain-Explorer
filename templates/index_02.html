@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<title>Transaction Summary</title>
+    <link rel="stylesheet" href="../static/styles.css"/>
+
+</head>
+<body>
+
+<h1>Transaction Summary</h1>
+
+ {% if not input %}
+
+   <h2> The Transaction could not be found!</h2>
+
+ <img
+            src="../static/images/Error.png"
+            alt="Ethereum Logo"
+            class="center"
+    />
+
+    <div class="main-box">
+
+
+
+        {% endif %}
+
+    {% if input %}
+
+
+    <div class="box-title">Transaction Analysis Summary</div>
+    <div class="box-content">
+    <p class="box-msg">Block Hash: {{input.blockHash}}</p>
+    <p>Block Number: {{input.blockNumber}}</p>
+    <p>From:{{input.from}}</p>
+    <p>To:{{input.to}}</p>
+    <p>Transaction Hash:{{input.hash}}</p>
+    <p>Value: {{input.value}}</p>
+
+
+    {% endif %}
+
+    </div>
+    </div>
+
+</body>
+</html>
