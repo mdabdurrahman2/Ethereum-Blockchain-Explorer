@@ -16,5 +16,5 @@ This project is a simple Ethereum blockchain explorer built using Python and Fla
 
 
 Notes
-This project connects to the Sepolia test network using Infura. If you want to connect to a different network or node provider, update the eth variable with the appropriate URL.
-Error handling is minimal; if the connection fails or an invalid transaction hash is provided, the page may not display expected results.
+- This project connects to the Sepolia test network using Infura. If you want to connect to a different network or node provider, update the eth variable with the appropriate URL.
+- Error handling is minimal; if the connection fails or an invalid transaction hash is provided, the page may not display expected results.
